@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    padding:20px;
+}
+
+header{
+    text-align:center;
+    color:white;
+    margin-bottom:20px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 15px;
+    border:1px solid rgba(255,255,255,0.4);
+    border-radius:8px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#333;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    background:#667eea;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#4f63d8;
+}
+
+#result{
+    margin-top:15px;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.box{
+    background:#667eea;
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.todo-container{
+    display:flex;
+    gap:10px;
+}
+
+.todo-container input{
+    flex:1;
+}
+
+ul{
+    margin-top:20px;
+}
+
+li{
+    list-style:none;
+    background:#f3f3f3;
+    margin-bottom:10px;
+    padding:10px;
+    border-radius:8px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer{
+    text-align:center;
+    color:white;
+    margin-top:20px;
+}
+
+@media(max-width:768px){
+
+    .grid-container{
+        grid-template-columns:1fr;
+    }
+
+    .todo-container{
+        flex-direction:column;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+}

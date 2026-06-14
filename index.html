@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermediate HTML, CSS & JavaScript Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Intermediate HTML, CSS & JavaScript Project</h1>
+        <p>Task 2 - ApexPlanet</p>
+    </header>
+
+    <nav>
+        <a href="#contact">Contact Form</a>
+        <a href="#skills">Responsive Layout</a>
+        <a href="#todo">To-Do List</a>
+    </nav>
+
+    <!-- Contact Form -->
+    <section id="contact" class="card">
+        <h2>Contact Form</h2>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <input type="email" id="email" placeholder="Enter Your Email">
+            <textarea id="message" placeholder="Enter Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+
+    <!-- Responsive Layout -->
+    <section id="skills" class="card">
+        <h2>Technologies</h2>
+
+        <div class="grid-container">
+            <div class="box">HTML5</div>
+            <div class="box">CSS3</div>
+            <div class="box">JavaScript</div>
+            <div class="box">Responsive Design</div>
+        </div>
+    </section>
+
+    <!-- Todo List -->
+    <section id="todo" class="card">
+        <h2>Dynamic To-Do List</h2>
+
+        <div class="todo-container">
+            <input type="text" id="taskInput" placeholder="Enter Task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <footer>
+        <p>Created for Intermediate HTML, CSS & JavaScript Task</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
